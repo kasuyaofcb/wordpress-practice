@@ -1,0 +1,85 @@
+//qa.scss
+
+.qa {
+  padding: 74px 32px 0 32px;
+  .qaInner {
+    max-width: 900px;
+    margin: 0 auto;
+    .qa__acordion {
+      margin-top: 25px;
+      .acordion__item {
+        color: #1b224c;
+        .item__q {
+          padding-right: 40px;
+          height: 64px;
+          font-weight: normal;
+          border-top: 1px solid #1b224c;
+          position: relative;
+          cursor: pointer;
+          user-select: none;
+          &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            width: 2px;
+            height: 32px;
+            background-color: #1b224c;
+          }
+          &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 30px;
+            right: 5px;
+            width: 32px;
+            height: 2px;
+            background-color: #1b224c;
+          }
+          .q__text {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-right: 64px;
+          }
+        }
+        .item__a {
+          background-color: #f8f8f8;
+          padding-left: 27px;
+          transition: 0.4s;
+          position: relative;
+          .a__text {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-right: 40px;
+          }
+        }
+        .js__action {
+          height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transition-duration: 0.4s;
+          transition: 0.4s;
+        }
+        .js__is--open {
+          height: 64px;
+          padding-left: 27px;
+          margin-bottom: 16px;
+          opacity: 1;
+          transition: 0.4s;
+          @media screen and(max-width:375px) {
+            height: 94px;
+          }
+        }
+        .js__is--active {
+          &::before {
+            transform: rotate(90deg);
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+  }
+}

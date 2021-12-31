@@ -1,0 +1,96 @@
+//base.scss
+
+html {
+  font-size: 62.5%;
+
+  body {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 1.6rem;
+    h1 {
+      font-size: 4.8rem;
+      font-weight: bold;
+      color: #fff;
+      @media screen and(max-width:375px) {
+        font-size: 3.8rem;
+      }
+    }
+    .h2__title--blue {
+      font-size: 3.6rem;
+      font-weight: bold;
+      color: #1b224c;
+      text-align: center;
+      line-height: 50px;
+      @media screen and(max-width:375px) {
+        font-size: 2.4rem;
+      }
+    }
+
+    .h2__title--white {
+      font-size: 3.6rem;
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+      @media screen and(max-width:375px) {
+        font-size: 2.4rem;
+      }
+    }
+
+    .btn--yellow {
+      background-color: #f5a623;
+    }
+    .btn--blue {
+      background-color: #1b224c;
+    }
+    .btn__square {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #fff;
+      border-radius: 4px;
+      padding: 0.8rem 1rem 0.8rem 1rem;
+      margin-right: 10px;
+    }
+    .btn__round {
+      display: block;
+      line-height: 60px;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #fff;
+      border-radius: 60px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .badge--yellow {
+      display: inline-block;
+      color: #fff;
+      background-color: #f5a623;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.2rem;
+    }
+    @media screen and(max-width:530px) {
+      .pc__br {
+        display: none;
+      }
+    }
+
+    #mask {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(172, 169, 169, 0.842);
+      z-index: -1;
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .mask {
+      opacity: 1 !important;
+      z-index: 3 !important;
+      transition: 0.3s;
+    }
+  }
+}

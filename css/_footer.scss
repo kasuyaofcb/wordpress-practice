@@ -1,0 +1,53 @@
+//footer.scss
+
+.footer {
+  background-color: #1b224c;
+  color: #fff;
+  padding-top: 36px;
+  padding-bottom: 68px;
+  .footerInner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    .footer__nav {
+      display: flex;
+      flex-wrap: wrap;
+      .nav__item {
+        padding-right: 27px;
+        padding-left: 27px;
+        border-right: 1px solid #fff;
+        line-height: 21px;
+        height: 21px;
+        @media screen and(max-width:375px) {
+          padding-right: 16px;
+          padding-left: 16px;
+        }
+      }
+    }
+    .info {
+      margin-right: 64px;
+      @media screen and(max-width:375px) {
+        margin-right: 16px;
+      }
+      .info__logo {
+        background-color: #fff;
+        padding: 14px 18px;
+      }
+      .info__tel {
+        margin-top: 27px;
+        font-weight: bold;
+        text-align: right;
+        .tel__icon {
+          margin-right: 3px;
+          margin-bottom: 3px;
+        }
+      }
+      .info__time {
+        margin-top: 14px;
+        font-size: 1.2rem;
+        text-align: right;
+      }
+    }
+  }
+}

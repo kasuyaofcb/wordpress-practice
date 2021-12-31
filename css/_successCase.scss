@@ -1,0 +1,65 @@
+//success-case.scss
+
+.successCase {
+  padding: 64px 16px 60px 16px;
+  background-color: #1b224c;
+  text-align: center;
+
+  .successCase__cards {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 126px auto 0;
+    @media screen and(max-width:900px) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-top: 64px;
+    }
+    .card__item {
+      max-width: 280px;
+      @media screen and(max-width:900px) {
+        margin-right: 8px;
+        margin-top: 32px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+      .item__title {
+        color: #fff;
+        font-weight: bold;
+        text-align: left;
+        line-height: 29px;
+      }
+      .item__imgFrame {
+        background-color: #fff;
+        height: 140px;
+      }
+      .item__text {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+
+        .text__job {
+          width: 80px;
+          margin-right: 8px;
+        }
+        .text__name {
+          width: 152px;
+        }
+        .card__text {
+          background-color: #fff;
+          color: #1b224c;
+          line-height: 32px;
+          text-align: left;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .text__case {
+          margin-top: 10px;
+          width: 260px;
+        }
+      }
+    }
+  }
+}
