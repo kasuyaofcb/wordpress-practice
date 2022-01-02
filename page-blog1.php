@@ -5,6 +5,7 @@
 
     <?php get_template_part('blogTemplates/blogTop'); ?>
 
+    <?php get_template_part('blogTemplates/blogNew'); ?>
 
 
 

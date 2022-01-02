@@ -56,4 +56,7 @@ for(let i =0; i < list.length; i++){
   });
 }
 
+//料金 横スクロール
+new ScrollHint('.js-scrollable');
+
 }
