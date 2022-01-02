@@ -34,11 +34,27 @@ add_action('wp_enqueue_scripts', 'js_scripts');
 // カスタム投稿タイプの追加
 function add_custom_post_type()
 {
-    // 制作実績
+    // 成功事例
     register_post_type(
         'saccess-case', // 1.投稿タイプ名 
         array(   // 2.オプション 
             'label' => '成功事例', // 投稿タイプの名前
+            'public'        => true, // 利用する場合はtrueにする 
+            'has_archive'   => true, // この投稿タイプのアーカイブを有効にする
+            'menu_position' => 5, // この投稿タイプが表示されるメニューの位置
+            'menu_icon'     => 'dashicons-edit', // メニューで使用するアイコン
+            'supports' => array( // サポートする機能
+                'title',
+                'editor',
+            )
+        )
+    );
+
+    // 料金
+    register_post_type(
+        'price', // 1.投稿タイプ名 
+        array(   // 2.オプション 
+            'label' => '料金', // 投稿タイプの名前
             'public'        => true, // 利用する場合はtrueにする 
             'has_archive'   => true, // この投稿タイプのアーカイブを有効にする
             'menu_position' => 5, // この投稿タイプが表示されるメニューの位置

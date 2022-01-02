@@ -1,0 +1,70 @@
+// price.scss
+
+.price {
+  padding: 100px 32px 0 32px;
+  .priceInner {
+    max-width: 900px;
+    margin: 0 auto;
+    .price__box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 96px;
+      .box__item {
+        text-align: center;
+        width: 218px;
+        margin-bottom: 60px;
+        @media screen and(max-width:600px) {
+          justify-content: space-evenly;
+        }
+
+        .item__title {
+          width: 220px;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          background-color: #1b224c;
+          color: #fff;
+          margin: 0 auto;
+        }
+        .itemInner {
+          border: 1px solid #1b224c;
+          width: 218px;
+          height: 414px;
+        }
+        .item__price {
+          font-size: 25px;
+          font-weight: bold;
+          padding-top: 36px;
+        }
+        .item__term {
+          margin-top: 10px;
+        }
+        .item__text {
+          margin-top: 50px;
+          .text__detail {
+            margin-top: 20px;
+          }
+        }
+      }
+      .pickUp__item {
+        margin-top: -36px;
+        border: none;
+        .pickUp--pop {
+          color: #fff;
+          background-color: #f5a623;
+          width: 220px;
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+        }
+        .pickUpInner {
+          border-top: none;
+        }
+        .title--pickUp {
+          background-color: #f5a623;
+        }
+      }
+    }
+  }
+}

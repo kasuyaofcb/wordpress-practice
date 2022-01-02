@@ -1526,6 +1526,11 @@ html body .mask {
   position: relative;
 }
 
+.toContact .toContact__img .toContact__img--s {
+  width: 100%;
+  height: 260px;
+}
+
 .toContact .toContact__img .toContactInner {
   position: absolute;
   top: 50%;
@@ -1700,5 +1705,534 @@ html body .mask {
 
 .copyright .copyright__text {
   text-align: right;
+}
+
+.priceSystemTop .headerWrapper {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  background-color: #fff;
+  height: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .priceSystemTop .headerWrapper .innerLeft {
+    display: none;
+  }
+}
+
+.priceSystemTop .headerWrapper .innerLeftSp {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .priceSystemTop .headerWrapper .innerLeftSp {
+    display: block;
+  }
+  .priceSystemTop .headerWrapper .innerLeftSp .nav__sp {
+    background-color: #fff;
+    position: fixed;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    left: -250px;
+    padding: 40px 16px 0 16px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .priceSystemTop .headerWrapper .innerLeftSp .nav__sp .hamuburgerNav__text {
+    text-align: center;
+  }
+  .priceSystemTop .headerWrapper .innerLeftSp .nav__sp .hamuburgerNav__text .hamuburgerNav__logo {
+    width: 150px;
+    text-align: center;
+    margin: 64px auto 0;
+  }
+  .priceSystemTop .headerWrapper .innerLeftSp .nav__sp .hamuburgerNav__text .hamuburgerNav__item {
+    margin-top: 40px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.priceSystemTop .headerWrapper .innerLeftSp .fadein {
+  -webkit-transform: translateX(250px);
+  transform: taranslateX(250px);
+  z-index: 5;
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.priceSystemTop .headerWrapper .innerLeftSp .target {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 25px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 12;
+}
+
+@media screen and (max-width: 964px) {
+  .priceSystemTop .headerWrapper .innerLeftSp .target .target__inner .target__inner__line {
+    position: fixed;
+    width: 30px;
+    height: 3px;
+    background-color: #1b224c;
+  }
+}
+
+@media screen and (max-width: 964px) {
+  .priceSystemTop .headerWrapper .innerLeftSp .target .target__inner .target__inner__1 {
+    top: 27px;
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 964px) {
+  .priceSystemTop .headerWrapper .innerLeftSp .target .target__inner .target__inner__2 {
+    top: 38px;
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 964px) {
+  .priceSystemTop .headerWrapper .innerLeftSp .target .target__inner .target__inner__3 {
+    top: 49px;
+    left: 30px;
+  }
+}
+
+.priceSystemTop .headerWrapper .innerLeftSp .target .target__inner .linea {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 38px;
+}
+
+.priceSystemTop .headerWrapper .innerLeftSp .target .target__inner .lineb {
+  opacity: 0;
+}
+
+.priceSystemTop .headerWrapper .innerLeftSp .target .target__inner .linec {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 38px;
+}
+
+.priceSystemTop .headerWrapper .innerLeftSp .target .slidex {
+  z-index: 20;
+}
+
+.priceSystemTop .headerWrapperInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.priceSystemTop .headerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.priceSystemTop .headerNav .headerNav__item {
+  margin-right: 40px;
+}
+
+.priceSystemTop .headerNav .headerNav__item:last-child {
+  margin-right: 0;
+}
+
+.priceSystemTop .headerWrapper__logo {
+  margin-right: 30px;
+}
+
+.priceSystemTop .innerRight {
+  padding-bottom: 15px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.priceSystemTop .innerRight .headerInfo {
+  vertical-align: bottom;
+  height: 50px;
+  margin-right: 25px;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.priceSystemTop .innerRight .headerInfo .headerInfo__openingTime {
+  font-size: 1.2rem;
+}
+
+.priceSystemTop .innerRight .headerInfo .headerInfo__tel {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.priceSystemTop .innerRight .headerInfo .headerInfo__tel .tel-icon {
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+.priceSystemTop .innerRight .headerBtnWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 450px) {
+  .priceSystemTop .innerRight .headerBtnWrapper {
+    display: block;
+    padding-top: 8px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .priceSystemTop .innerRight .headerBtnWrapper .btn__square {
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+
+.priceSystemTop .innerRight .headerBtnWrapper .btn__square:last-child {
+  margin-right: 0;
+}
+
+.priceSystemTop .priceSystemTop__img {
+  margin-top: 80px;
+  position: relative;
+}
+
+.priceSystemTop .priceSystemTop__img .subPage__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.priceSystemTop .priceSystemTop__img .priceSystemTop__img--s {
+  width: 100%;
+  height: 220px;
+}
+
+.priceSystemTop .breadcrumbs {
+  height: 50px;
+  background-color: #f8f8f8;
+  padding-left: 190px;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .priceSystemTop .breadcrumbs {
+    padding-left: 32px;
+  }
+}
+
+.priceSystem {
+  padding: 60px 32px 0 32px;
+}
+
+.priceSystem .priceSystemInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.priceSystem .priceSystemInner .priceSystem__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 56px;
+}
+
+@media screen and (max-width: 600px) {
+  .priceSystem .priceSystemInner .priceSystem__box {
+    display: block;
+  }
+}
+
+.priceSystem .priceSystemInner .priceSystem__box .box__item {
+  width: 280px;
+  height: 90px;
+  color: #fff;
+  background-color: #1b224c;
+  font-size: 22px;
+  text-align: center;
+  line-height: 90px;
+  margin-right: 36px;
+}
+
+@media screen and (max-width: 600px) {
+  .priceSystem .priceSystemInner .priceSystem__box .box__item {
+    margin: 0 auto;
+  }
+}
+
+.priceSystem .priceSystemInner .priceSystem__box .box__item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .priceSystem .priceSystemInner .priceSystem__box .box__item:last-child {
+    margin: 0 auto;
+  }
+}
+
+.priceSystem .priceSystemInner .priceSystem__box .box__plus {
+  font-size: 36px;
+  line-height: 90px;
+  margin-right: 36px;
+}
+
+@media screen and (max-width: 600px) {
+  .priceSystem .priceSystemInner .priceSystem__box .box__plus {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+.priceSystem .priceSystem__text {
+  margin-top: 50px;
+  color: #1b224c;
+}
+
+.price {
+  padding: 100px 32px 0 32px;
+}
+
+.price .priceInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.price .priceInner .price__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 96px;
+}
+
+.price .priceInner .price__box .box__item {
+  text-align: center;
+  width: 218px;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .price .priceInner .price__box .box__item {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.price .priceInner .price__box .box__item .item__title {
+  width: 220px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #1b224c;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.price .priceInner .price__box .box__item .itemInner {
+  border: 1px solid #1b224c;
+  width: 218px;
+  height: 414px;
+}
+
+.price .priceInner .price__box .box__item .item__price {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 36px;
+}
+
+.price .priceInner .price__box .box__item .item__term {
+  margin-top: 10px;
+}
+
+.price .priceInner .price__box .box__item .item__text {
+  margin-top: 50px;
+}
+
+.price .priceInner .price__box .box__item .item__text .text__detail {
+  margin-top: 20px;
+}
+
+.price .priceInner .price__box .pickUp__item {
+  margin-top: -36px;
+  border: none;
+}
+
+.price .priceInner .price__box .pickUp__item .pickUp--pop {
+  color: #fff;
+  background-color: #f5a623;
+  width: 220px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.price .priceInner .price__box .pickUp__item .pickUpInner {
+  border-top: none;
+}
+
+.price .priceInner .price__box .pickUp__item .title--pickUp {
+  background-color: #f5a623;
+}
+
+.toContact .toContact__img {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.toContact .toContact__img .toContact__img--s {
+  width: 100%;
+  height: 260px;
+}
+
+.toContact .toContact__img .toContactInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  width: 500px;
+}
+
+@media screen and (max-width: 650px) {
+  .toContact .toContact__img .toContactInner {
+    width: 320px;
+  }
+}
+
+.toContact .toContact__img .toContactInner .toContact__btn {
+  margin-top: 20px;
+}
+
+.toContact .toContact__img .toContactInner .toContact__contact {
+  margin-top: 20px;
+  border-bottom: 1px solid #fff;
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+}
+
+.toContact .toContact__address {
+  padding-right: 32px;
+  padding-left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 900px;
+  color: #1b224c;
+  margin: 27px auto;
+}
+
+@media screen and (max-width: 600px) {
+  .toContact .toContact__address {
+    display: block;
+  }
+}
+
+.toContact .toContact__address .address__text {
+  margin-right: 36px;
+}
+
+@media screen and (max-width: 600px) {
+  .toContact .toContact__address .address__text {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+.toContact .toContact__address .address__tel {
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .toContact .toContact__address .address__tel {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .toContact .toContact__address .address__tel {
+    margin-right: 0;
+    text-align: center;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .toContact .toContact__address .address__time {
+    margin-right: 0;
+    text-align: center;
+    margin-top: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

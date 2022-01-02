@@ -16,3 +16,12 @@
 @import "_toContact.scss"; // 資料請求CSS(SCSS)を呼び出す。
 @import "_footer.scss"; // フッターCSS(SCSS)を呼び出す。
 @import "_copyright.scss"; // コピーライトCSS(SCSS)を呼び出す。
+
+//priceSystem
+@import "../priceSystemTemplates/css/_priceSystemTop.scss"; // 料金体系トップCSS(SCSS)を呼び出す。
+@import "../priceSystemTemplates/css/_priceSystem.scss"; // 料金体系CSS(SCSS)を呼び出す。
+@import "../priceSystemTemplates/css/_price.scss"; // 料金CSS(SCSS)を呼び出す。
+@import "../priceSystemTemplates/css/_toContact.scss"; // 資料請求CSS(SCSS)を呼び出す。
+
+//blog
+@import "../blogTemplates/css/_blogTop.scss"; // ブログトップCSS(SCSS)を呼び出す。

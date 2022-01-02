@@ -2,6 +2,6 @@
 
 <body>
 
-    <p>こんにちは!!!</p>
+
 
     <?php get_footer(); ?>

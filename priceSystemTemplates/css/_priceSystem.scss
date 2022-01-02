@@ -1,0 +1,51 @@
+//priceSystem.scss
+
+.priceSystem {
+  padding: 60px 32px 0 32px;
+  .priceSystemInner {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .priceSystem__box {
+      display: flex;
+      justify-content: center;
+      margin-top: 56px;
+      @media screen and(max-width:600px) {
+        display: block;
+      }
+
+      .box__item {
+        width: 280px;
+        height: 90px;
+        color: #fff;
+        background-color: #1b224c;
+        font-size: 22px;
+        text-align: center;
+        line-height: 90px;
+        margin-right: 36px;
+        @media screen and(max-width:600px) {
+          margin: 0 auto;
+        }
+        &:last-child {
+          margin-right: 0;
+          @media screen and(max-width:600px) {
+            margin: 0 auto;
+          }
+        }
+      }
+      .box__plus {
+        font-size: 36px;
+        line-height: 90px;
+        margin-right: 36px;
+        @media screen and(max-width:600px) {
+          text-align: center;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .priceSystem__text {
+    margin-top: 50px;
+    color: #1b224c;
+  }
+}
