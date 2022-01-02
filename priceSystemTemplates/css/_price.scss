@@ -7,15 +7,15 @@
     margin: 0 auto;
     .price__box {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      overflow-x: scroll;
       margin-top: 96px;
       .box__item {
         text-align: center;
         width: 218px;
         margin-bottom: 60px;
-        @media screen and(max-width:600px) {
-          justify-content: space-evenly;
+        margin-right: 8px;
+        &:last-child {
+          margin-right: 0;
         }
 
         .item__title {

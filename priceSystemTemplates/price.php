@@ -3,7 +3,7 @@
         <h2 class="price__title h2__title--blue">
             料金表
         </h2>
-        <ul class="price__box">
+        <ul class="price__box js-scrollable">
             <li class="box__item">
                 <div class="item__title"> <?php the_field('plan', 76); ?></div>
                 <div class="itemInner">
