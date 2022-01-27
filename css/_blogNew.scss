@@ -1,0 +1,100 @@
+.blogNew {
+  padding: 60px 32px 54px 32px;
+  .blogNewInner {
+    .blog__wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      .blogItem {
+        display: flex;
+        margin-top: 60px;
+        @media screen and(max-width:725px) {
+          display: block;
+        }
+        .blogItem__img {
+          position: relative;
+          margin-right: 20px;
+          width: 240px;
+          height: 150px;
+          .blogItem__img--s {
+            width: 100%;
+            height: 100%;
+          }
+          .img__badge {
+            position: absolute;
+            background-color: #1b224c;
+            width: 78px;
+            height: 23px;
+            color: #fff;
+            font-size: 1.2rem;
+            line-height: 23px;
+            padding-left: 4px;
+          }
+        }
+        .blogItem__text {
+          text-align: left;
+          position: relative;
+          color: #1b224c;
+          min-width: 100px;
+          .text__title {
+            display: inline;
+            border-bottom: 1px solid #1b224c;
+            line-height: 36px;
+            font-weight: bold;
+            margin-top: 3px;
+            font-size: 26px;
+            @media screen and(max-width:900px) {
+              font-size: 20px;
+            }
+          }
+          .text__content {
+            margin-top: 32px;
+            @media screen and(max-width:900px) {
+              margin-top: 16px;
+            }
+          }
+          .text__date {
+            margin-top: 8px;
+            margin-bottom: 32px;
+            font-size: 1.2rem;
+            @media screen and(max-width:900px) {
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+    }
+    .pnavi {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      .page-numbers {
+        display: block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border: 1px solid #1b224c;
+        margin-right: 16px;
+        @media screen and(max-width:375px) {
+          width: 32px;
+          margin-right: 8px;
+        }
+      }
+      .current {
+        background-color: #1b224c;
+        color: #fff;
+      }
+      .prev {
+        border: none;
+      }
+      .next {
+        border: none;
+        line-height: 20px;
+        margin-top: 20px;
+      }
+      .dots {
+        border: none;
+      }
+    }
+  }
+}

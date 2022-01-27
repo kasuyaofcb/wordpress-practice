@@ -1,0 +1,249 @@
+.singleBlogDetail {
+  padding: 0 32px 0 32px;
+  .detailInner {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+
+    .detailInner__item {
+      margin-right: 36px;
+      .blog__wrapper {
+        max-width: 590px;
+        margin: 0 auto;
+        .blogItem {
+          margin-top: 60px;
+
+          .img__badge {
+            background-color: #1b224c;
+            width: 78px;
+            height: 23px;
+            color: #fff;
+            font-size: 1.2rem;
+            line-height: 23px;
+            padding-left: 4px;
+            margin-bottom: 32px;
+          }
+          .wp-post-image {
+            @media screen and(max-width:675px) {
+              width: 280px;
+              height: auto;
+            }
+          }
+
+          .text__title {
+            display: inline;
+            color: #1b224c;
+            line-height: 36px;
+            font-weight: bold;
+
+            font-size: 28px;
+            @media screen and(max-width:900px) {
+              font-size: 20px;
+            }
+          }
+          .snsDate__box {
+            display: flex;
+            justify-content: space-between;
+            @media screen and(max-width:600px) {
+              display: block;
+            }
+            .sns__icon {
+              font-weight: bold;
+              font-size: 10px;
+              text-align: center;
+              margin-top: 64px;
+              display: flex;
+              @media screen and(max-width:600px) {
+                margin-top: 32px;
+              }
+              .icon__item {
+                margin-right: 8px;
+              }
+              .icon__like {
+                background-color: #305097;
+                color: #fff;
+                height: 20px;
+                line-height: 20px;
+                width: 70px;
+                border-radius: 4px;
+                .fa-thumbs-up {
+                  margin-right: 5px;
+                }
+              }
+              .icon__share {
+                background-color: #305097;
+                color: #fff;
+                height: 20px;
+                line-height: 20px;
+                width: 45px;
+                border-radius: 4px;
+              }
+              .icon__twitter {
+                background-color: #00aced;
+                color: #fff;
+                height: 20px;
+                line-height: 20px;
+                width: 70px;
+                border-radius: 4px;
+                .fa-twitter {
+                  margin-right: 5px;
+                }
+              }
+            }
+            .text__date {
+              display: flex;
+              align-items: flex-end;
+              font-size: 1.2rem;
+              @media screen and(max-width:600px) {
+                margin-top: 16px;
+              }
+            }
+          }
+          .blogItem__img {
+            margin-top: 24px;
+            @media screen and(max-width:600px) {
+              margin-top: 16px;
+            }
+
+            .blogItem__img--s {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .blogItem__text {
+            text-align: left;
+            position: relative;
+            color: #1b224c;
+            min-width: 100px;
+          }
+          .text__content {
+            margin-top: 32px;
+            @media screen and(max-width:900px) {
+              margin-top: 16px;
+              p {
+                line-height: 24px;
+              }
+              h2 {
+                font-size: 26px;
+                line-height: 39px;
+                font-weight: bold;
+                margin-bottom: 30px;
+              }
+              h3 {
+                font-size: 22px;
+                line-height: 33px;
+                font-weight: bold;
+                margin-bottom: 30px;
+              }
+            }
+            .wp-block-quote {
+              margin-top: 32px;
+              margin-bottom: 32px;
+              padding: 32px 32px;
+              background-color: #f8f8f8;
+            }
+            .wp-image-145 {
+              @media screen and(max-width:675px) {
+                width: 280px;
+                height: auto;
+              }
+            }
+            li {
+              position: relative;
+              margin-left: 16px;
+              line-height: 24px;
+              &::before {
+                position: absolute;
+                top: 4px;
+                left: -16px;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background-color: #f5a623;
+                border-radius: 50%;
+              }
+            }
+          }
+          .text__link {
+            display: inline-block;
+            color: #f5a623;
+            margin-top: 88px;
+            border-bottom: 1px solid #f5a623;
+          }
+        }
+      }
+    }
+    .sidebar {
+      @media screen and(max-width:1000px) {
+        display: none;
+      }
+      margin-top: 60px;
+      .related {
+        .related__title {
+          width: 270px;
+          height: 64px;
+          background-color: #1b224c;
+          color: #fff;
+          text-align: center;
+          line-height: 64px;
+          @media screen and(max-width:900px) {
+            margin-bottom: 32px;
+          }
+        }
+        .sidebarBlog__wrapper {
+          max-width: 430px;
+          margin-right: 32px;
+          color: #1b224c;
+          @media screen and(max-width:600px) {
+            margin-right: 0;
+            max-width: 600px;
+          }
+          .sidebarBlogItem {
+            display: flex;
+            margin-top: 32px;
+            .sidebarBlogItem__img {
+              margin-right: 20px;
+              width: 150px;
+              height: 110px;
+            }
+            .sidebarBlogItem__text {
+              text-align: left;
+
+              color: #1b224c;
+              min-width: 100px;
+              .text__title {
+                display: inline;
+                border-bottom: 1px solid #1b224c;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: bold;
+                margin-top: 3px;
+              }
+              .text__date {
+                margin-top: 20px;
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+      .category {
+        margin-top: 50px;
+
+        .category__title {
+          width: 270px;
+          height: 64px;
+          background-color: #1b224c;
+          color: #fff;
+          text-align: center;
+          line-height: 64px;
+          margin-bottom: 32px;
+        }
+        .cat-item {
+          margin-top: 16px;
+          color: #1b224c;
+        }
+      }
+    }
+  }
+}

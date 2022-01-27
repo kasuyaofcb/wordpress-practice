@@ -1,0 +1,45 @@
+//style.scss
+
+@charset "utf-8";
+
+@use "css/_reset.scss"; // ここでリセットCSS(SCSS)を呼び出す。
+@use "css/_base.scss"; // 基本設定のCSS(SCSS)を呼び出す。
+@use "css/_header.scss"; // ファーストビュー）CSS(SCSS)を呼び出す。
+@use "css/_firstView"; // ファーストビューCSS(SCSS)を呼び出す。
+@use "css/_issue.scss"; // イシューCSS(SCSS)を呼び出す。
+@use "css/_strongPoint.scss"; // ストロングポイントCSS(SCSS)を呼び出す。
+@use "css/_toPrice.scss"; // 料金表へCSS(SCSS)を呼び出す。
+@use "css/_successCase.scss"; // 成功事例CSS(SCSS)を呼び出す。
+@use "css/_flow.scss"; // フローCSS(SCSS)を呼び出す。
+@use "css/_qa.scss"; // Q&A CSS(SCSS)を呼び出す。
+@use "css/_blogNews.scss"; // ブログとニュースCSS(SCSS)を呼び出す。
+@use "css/_toContact.scss"; // 資料請求CSS(SCSS)を呼び出す。
+@use "css/_footer.scss"; // フッターCSS(SCSS)を呼び出す。
+@use "css/_copyright.scss"; // コピーライトCSS(SCSS)を呼び出す。
+
+//priceSystem
+@use "css/_priceSystemTop.scss"; // 料金体系トップCSS(SCSS)を呼び出す。
+@use "css/_priceSystem.scss"; // 料金体系CSS(SCSS)を呼び出す。
+@use "css/_price.scss"; // 料金CSS(SCSS)を呼び出す。
+
+//blog
+@use "css/_blogTop.scss"; // ブログトップCSS(SCSS)を呼び出す。
+@use "css/_blogNew.scss"; // 新着一覧CSS(SCSS)を呼び出す。
+
+//singleBlog
+@use "css/_singleBlogTop.scss"; // ブログトップCSS(SCSS)を呼び出す。
+@use "css/_singleBlogDetail.scss"; // ブログ詳細CSS(SCSS)を呼び出す。
+@use "css/_singleBlogPickup.scss"; // ブログピックアップCSS(SCSS)を呼び出す。
+
+//news
+@use "css/_noticeTop.scss"; // お知らせトップCSS(SCSS)を呼び出す。
+@use "css/_notice.scss"; // お知らせCSS(SCSS)を呼び出す。
+
+//singleNews
+@use "css/single-newsTop"; // お知らせトップCSS(SCSS)を呼び出す。
+@use "css/_single-newsContent.scss"; // お知らせ内容CSS(SCSS)を呼び出す。
+// @use "css/_singleBlogPickup.scss"; // ブログピックアップCSS(SCSS)を呼び出す。
+
+//page-contact
+@use "css/page-contactTop"; // お問い合わせトップCSS(SCSS)を呼び出す。
+@use "css/page-contactContent"; // お問い合わせCSS(SCSS)を呼び出す。
