@@ -1,4 +1,4 @@
-<section class="blogTop">
+<section class="noticeTop">
 
     <div class="headerWrapper">
         <div class="headerWrapperInner innerLeft">
@@ -38,7 +38,9 @@
                             <li class="hamuburgerNav__logo">
                                 <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_logo.png" alt="Engressロゴ"></a>
                             </li>
-                            <li class="hamuburgerNav__item"><a href="#">
+                            <li class="hamuburgerNav__item"><a href="<?php
+                                                                        echo home_url('/');
+                                                                        ?>">
                                     ホーム</a>
                             </li>
                             <li class="hamuburgerNav__item"><a href="<?php
@@ -75,13 +77,15 @@
             </div>
             <div class="headerBtnWrapper">
                 <a href="#" class="btn__square btn--yellow">資料請求</a>
-                <a href="#" class="btn__square btn--blue">お問い合わせ</a>
+                <a href="<?php
+                            echo get_page_link(183);
+                            ?>" class="btn__square btn--blue">お問い合わせ</a>
             </div>
         </div>
     </div>
-    <figure class="blogTop__img">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/blogtop.png" alt="ブログトップ画像:先生が生徒に教えている" class="blogTop__img--s">
-        <h2 class="subPage__title h2__title--white">ブログ </h2>
+    <figure class="noticeTop__img">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/noticeTop.png" alt="ブログトップ画像:先生が生徒に教えている" class="noticeTop__img--s">
+        <h2 class="subPage__title h2__title--white">お知らせ</h2>
     </figure>
     <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
         <?php if (function_exists('bcn_display')) {

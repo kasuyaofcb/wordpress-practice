@@ -1,9 +1,4 @@
-//first-view.scss
-
-.firstView {
-  position: relative;
-  color: #1b224c;
-
+.blogTop {
   .headerWrapper {
     width: 100%;
     position: fixed;
@@ -180,48 +175,29 @@
       }
     }
   }
-  .firstViewInner {
+
+  .blogTop__img {
     margin-top: 80px;
     position: relative;
-    .topImg {
-      height: 476px;
-      .topImg__item {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
-    }
-    .firstViewText {
-      text-align: center;
+    .subPage__title {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      @media screen and(max-width:450px) {
-        padding-bottom: 16px;
-      }
-      .firstViewText__title {
-        margin-bottom: 20px;
-        line-height: 65px;
-      }
-      .firstViewText__subtitle {
-        font-size: 1.8rem;
-        color: #fff;
-        line-height: 24px;
-        margin-bottom: 55px;
-        @media screen and(max-width:450px) {
-          margin-bottom: 24px;
-        }
-      }
-      .btn__round {
-        margin-bottom: 20px;
-      }
-      .firstViewText__toContact {
-        font-size: 1.6rem;
-        line-height: 21px;
-        color: #fff;
-        border-bottom: 1px solid #fff;
-      }
+      transform: translate(-50%, -50%);
+    }
+    .blogTop__img--s {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+  }
+  .breadcrumbs {
+    height: 50px;
+    background-color: #f8f8f8;
+    padding-left: 190px;
+    padding-top: 25px;
+    @media screen and(max-width:600px) {
+      padding-left: 32px;
     }
   }
 }

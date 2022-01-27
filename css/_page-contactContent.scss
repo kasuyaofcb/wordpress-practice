@@ -1,0 +1,78 @@
+.contact__content {
+  .contact__inner {
+    max-width: 700px;
+    padding: 60px 32px;
+    margin: 0 auto;
+  }
+  .form__box {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 80px 32px;
+    .label {
+      margin-bottom: 12px;
+      display: block;
+    }
+    .company__name {
+      width: 100%;
+      margin-bottom: 20px;
+      line-height: 32px;
+      padding: 8px;
+    }
+    .name {
+      width: 100%;
+      margin-bottom: 20px;
+      line-height: 32px;
+      padding: 8px;
+    }
+    .email {
+      width: 100%;
+      margin-bottom: 20px;
+      line-height: 32px;
+      padding: 8px;
+    }
+    .tel {
+      width: 100%;
+      margin-bottom: 20px;
+      line-height: 32px;
+      padding: 8px;
+    }
+    .mwform-radio-field {
+      display: block;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .text {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 8px;
+    }
+    .text__title {
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+    .privacy__title {
+      text-align: center;
+      .privacy__poricy {
+        border-bottom: 1px solid #f5a623;
+        color: #f5a623;
+        cursor: pointer;
+      }
+    }
+    .mwform-checkbox-field {
+      text-align: center;
+      display: block;
+      margin-top: 32px;
+    }
+    .submit {
+      background-color: #1b224c;
+      color: #fff;
+      line-height: 50px;
+      width: 200px;
+      border-radius: 8px;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-top: 46px;
+    }
+  }
+}

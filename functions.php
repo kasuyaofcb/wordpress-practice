@@ -21,7 +21,7 @@ add_action('wp_enqueue_scripts', 'my_scripts');
 function js_scripts()
 {
     wp_enqueue_script(
-        'script',
+        'main',
         get_template_directory_uri() . '/main.js',
         array(),
         "1.0",

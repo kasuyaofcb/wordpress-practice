@@ -9,13 +9,19 @@
                     <li class="headerNav__item"><a href="#">
                             ホーム</a>
                     </li>
-                    <li class="headerNav__item"><a href="#">
+                    <li class="headerNav__item"><a href="<?php
+                                                            echo get_page_link(151);
+                                                            ?>">
                             お知らせ</a>
                     </li>
-                    <li class="headerNav__item"><a href="#">
+                    <li class="headerNav__item"><a href="<?php
+                                                            echo get_page_link(84);
+                                                            ?>">
                             ブログ</a>
                     </li>
-                    <li class="headerNav__item"><a href="#">
+                    <li class="headerNav__item"><a href="<?php
+                                                            echo get_page_link(62);
+                                                            ?>">
                             コース・料金</a>
                     </li>
                 </ul>
@@ -32,13 +38,19 @@
                             <li class="hamuburgerNav__item"><a href="#">
                                     ホーム</a>
                             </li>
-                            <li class="hamuburgerNav__item"><a href="#">
+                            <li class="hamuburgerNav__item"><a href="<?php
+                                                                        echo get_page_link(151);
+                                                                        ?>">
                                     お知らせ</a>
                             </li>
-                            <li class="hamuburgerNav__item"><a href="#">
+                            <li class="hamuburgerNav__item"><a href="<?php
+                                                                        echo get_page_link(84);
+                                                                        ?>">
                                     ブログ</a>
                             </li>
-                            <li class="hamuburgerNav__item"><a href="#">
+                            <li class="hamuburgerNav__item"><a href="<?php
+                                                                        echo get_page_link(62);
+                                                                        ?>">
                                     コース・料金</a>
                             </li>
                         </ul>
@@ -60,7 +72,9 @@
             </div>
             <div class="headerBtnWrapper">
                 <a href="#" class="btn__square btn--yellow">資料請求</a>
-                <a href="#" class="btn__square btn--blue">お問い合わせ</a>
+                <a href="<?php
+                            echo get_page_link(183);
+                            ?>" class="btn__square btn--blue">お問い合わせ</a>
             </div>
         </div>
     </div>

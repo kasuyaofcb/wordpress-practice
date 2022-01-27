@@ -62,7 +62,7 @@
                     'paged' => $paged, //ページネーションを使いたいなら指定
                     'posts_per_page' => 3, //３記事のみ出力
                     'post_status' => 'publish', //公開の記事だけ
-                    'post_type' => 'news', //カスタム投稿slag
+                    'post_type' => 'notice', //カスタム投稿slag
                     'orderby' => 'date', //日付を出力する基準
                     'order' => 'DESC' //表示する順番（逆はASC）
 

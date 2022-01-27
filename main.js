@@ -1,5 +1,9 @@
 'use strict'
 {
+
+  window.onload = function() {
+
+
    //アコーディオン
     const menu = document.querySelectorAll(".js__acordion--target");
  
@@ -32,18 +36,6 @@ document.getElementById('mask').addEventListener('click',()=>{
   hamburger();
 });
 
-// document.getElementById('nav-service-btn').addEventListener('click',()=>{
-//   hamburger();
-// });
-// document.getElementById('nav-living-btn').addEventListener('click',()=>{
-//   hamburger();
-// });
-// document.getElementById('nav-qa-btn').addEventListener('click',()=>{
-//   hamburger();
-// });
-// document.getElementById('nav-access-btn').addEventListener('click',()=>{
-//   hamburger();
-// });
 
 
 
@@ -59,4 +51,5 @@ for(let i =0; i < list.length; i++){
 //料金 横スクロール
 new ScrollHint('.js-scrollable');
 
+}
 }

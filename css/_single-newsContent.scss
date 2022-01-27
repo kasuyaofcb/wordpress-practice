@@ -1,0 +1,116 @@
+.singleNews__content {
+  padding: 0 32px 0 32px;
+  .content__inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 0;
+    @media screen and(max-width:900px) {
+      display: block;
+    }
+    .content__item {
+      margin-right: 36px;
+      .news__wrapper {
+        max-width: 590px;
+        margin: 0 auto;
+        .news__item {
+          .wp-post-image {
+            @media screen and(max-width:675px) {
+              width: 280px;
+              height: auto;
+            }
+          }
+
+          .text__title {
+            display: inline;
+            color: #1b224c;
+            line-height: 36px;
+            font-weight: bold;
+
+            font-size: 28px;
+            @media screen and(max-width:900px) {
+              font-size: 20px;
+            }
+          }
+          .snsDate__box {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 40px;
+            @media screen and(max-width:600px) {
+              display: block;
+            }
+
+            .text__date {
+              display: flex;
+              align-items: flex-end;
+              font-size: 1.2rem;
+              @media screen and(max-width:600px) {
+                margin-top: 16px;
+              }
+            }
+          }
+
+          .item__text {
+            text-align: left;
+            position: relative;
+            color: #1b224c;
+            min-width: 100px;
+          }
+          .text__content {
+            margin-top: 32px;
+            @media screen and(max-width:900px) {
+              margin-top: 16px;
+              p {
+                line-height: 24px;
+              }
+              h2 {
+                font-size: 26px;
+                line-height: 39px;
+                font-weight: bold;
+                margin-bottom: 30px;
+              }
+              h3 {
+                font-size: 22px;
+                line-height: 33px;
+                font-weight: bold;
+                margin-bottom: 30px;
+              }
+            }
+            .wp-block-quote {
+              margin-top: 32px;
+              margin-bottom: 32px;
+              padding: 32px 32px;
+              background-color: #f8f8f8;
+            }
+            .wp-image-145 {
+              @media screen and(max-width:675px) {
+                width: 280px;
+                height: auto;
+              }
+            }
+            li {
+              position: relative;
+              margin-left: 16px;
+              line-height: 24px;
+              &::before {
+                position: absolute;
+                top: 4px;
+                left: -16px;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background-color: #f5a623;
+                border-radius: 50%;
+              }
+            }
+          }
+          .text__link {
+            display: inline-block;
+            color: #f5a623;
+            margin-top: 88px;
+            border-bottom: 1px solid #f5a623;
+          }
+        }
+      }
+    }
+  }
+}

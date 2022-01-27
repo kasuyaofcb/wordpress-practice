@@ -11,7 +11,4 @@
 
     <?php get_template_part('priceSystemTemplates/toContact'); ?>
 
-
-
-
     <?php get_footer(); ?>
